@@ -7,14 +7,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <canvas></canvas>
   <div>
     <div>
-      <input class="line-width" type="range" min="1" max="10" value="5" step="0.5">
       <button class="filling-mode">✒️</button>
-      <button class="new-canvas">🆕</button>
+      <button class="new-canvas">🗑️</button>
+      <button class="eraser-mode">⬜</button>
+      <button class="upload-button">🖼️</button>
+      <button class="save-button">💾</button>
+      <input class="draw-text-mode" maxlength="20" type="text" placeholder="Enter word and double click canvas">
+      <input class = "image" type="file" accept="image/*" style="display: none">
     </div>
     <div>
+      <input class="line-width" type="range" min="1" max="10" value="5.0" step="0.5">
       <input class ="color" type="color">
       <div class="color-option" style="background-color: #EA2027;" data-color="#EA2027"></div>
       <div class="color-option" style="background-color: #EE5A24;" data-color="#EE5A24"></div>
@@ -29,6 +33,8 @@
     </div>
     
   </div>
+  <canvas></canvas>
+  
   <script src="app.js"></script>
 </body>
 </html>
